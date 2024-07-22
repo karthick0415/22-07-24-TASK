@@ -9,19 +9,13 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
 }
-
 .quiz-container {
     background-color: #e3d0d0;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align:left;
 }
-
 .option {
     margin: 10px 0;
     padding: 10px;
@@ -30,16 +24,6 @@ body {
     cursor: pointer;
     background-color: white;
     width: 100%;
-}
-
-.option.correct {
-    background-color: #12d941;
-    border-color: #c3e6cb;
-}
-
-.option.wrong {
-    background-color: #d21c2b;
-    border-color: #f5c6cb;
 }
 .dis{
     display: flex;
@@ -50,11 +34,10 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    cursor: pointer;
     background-color: rgb(211, 103, 103);
 }
         
-    </style>
+</style>
 </head>
 <body>
 <div class="quiz-container">
@@ -65,15 +48,15 @@ body {
     </div>
     <div class="dis">
         <div class="option1">B</div>
-        <div class="option" onclick="checkAnswer(this, 'B')">B) Corrective Style Sheet</div>
+        <div class="option" onclick="checkAnswer(this, 'B')">Corrective Style Sheet</div>
     </div>
     <div class="dis">
         <div class="option1">C</div>
-        <div class="option" onclick="checkAnswer(this, 'C')">C) Computer Style Sheet</div>
+        <div class="option" onclick="checkAnswer(this, 'C')">Computer Style Sheet</div>
     </div>
     <div class="dis">
         <div class="option1">D</div>
-        <div class="option" onclick="checkAnswer(this, 'D')">D) Cascading Style Sheet</div>
+        <div class="option" onclick="checkAnswer(this, 'D')">Cascading Style Sheet</div>
     </div>
 </div>
     <script>
