@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.quiz-container {
+    background-color: #e3d0d0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:left;
+}
+
+.option {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+}
+
+.option.correct {
+    background-color: #12d941;
+    border-color: #c3e6cb;
+}
+
+.option.wrong {
+    background-color: #d21c2b;
+    border-color: #f5c6cb;
+}
+.dis{
+    display: flex;
+  
+}
+.option1 {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(211, 103, 103);
+}
+        
+    </style>
+</head>
+<body>
+<div class="quiz-container">
+        <h2>In web design, what does CSS stand for?</h2>
+    <div class="dis">
+        <div class="option1">A</div>
+        <div class="option" onclick="checkAnswer(this, 'A')"> Counter Strike: Source</div>
+    </div>
+    <div class="dis">
+        <div class="option1">B</div>
+        <div class="option" onclick="checkAnswer(this, 'B')">B) Corrective Style Sheet</div>
+    </div>
+    <div class="dis">
+        <div class="option1">C</div>
+        <div class="option" onclick="checkAnswer(this, 'C')">C) Computer Style Sheet</div>
+    </div>
+    <div class="dis">
+        <div class="option1">D</div>
+        <div class="option" onclick="checkAnswer(this, 'D')">D) Cascading Style Sheet</div>
+    </div>
+</div>
+    <script>
+        function checkAnswer(element, answer) {
+            const correctAnswer = 'D';
+            if (answer === correctAnswer) {
+                element.style.backgroundColor = '#12d941';
+            } else {
+                element.style.backgroundColor = '#d21c2b';
+            }
+        }
+    </script>
+</body>
+</html>
