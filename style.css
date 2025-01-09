@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.quiz-container {
+    background-color: #e3d0d0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align:left;
+}
+.option {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+}
+.dis{
+    display: flex;
+  
+}
+.option1 {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(211, 103, 103);
+}
